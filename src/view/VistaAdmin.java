@@ -1,6 +1,9 @@
 
 package view;
 
+import Controller.FormularioController;
+import model.FormularioSpoty;
+import model.FormularySpotyDao;
 import model.Usuarios;
 import model.UsuariosDao;
 
@@ -8,6 +11,10 @@ public class VistaAdmin extends javax.swing.JFrame {
     //instanciamos los objetos que vamos a usar en esta vista 
     Usuarios usuarios = new Usuarios();
     UsuariosDao usuariosDao = new UsuariosDao();
+    
+    FormularioSpoty formularioSpoty = new FormularioSpoty();
+    FormularySpotyDao formularySpotyDao = new FormularySpotyDao();
+    
     
     public VistaAdmin() {
         initComponents();
